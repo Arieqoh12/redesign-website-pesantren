@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Program Tambahan - Darussalam</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Inter", sans-serif;
+      }
+
+      body {
+        background: #f8f9fa;
+      }
+
+      /* HERO */
+      .hero-program {
+        background:
+          linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+          url("images/banner.jpg");
+
+        background-size: cover;
+        background-position: center;
+        min-height: 70vh;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        padding: 20px;
+      }
+
+      .hero-content {
+        max-width: 800px;
+      }
+
+      .hero-content h1 {
+        font-size: 56px;
+        margin-bottom: 20px;
+        font-weight: 800;
+      }
+
+      .hero-content p {
+        font-size: 18px;
+        line-height: 1.8;
+        opacity: 0.95;
+      }
+
+      /* SECTION */
+      .gallery-section {
+        padding: 80px 8%;
+      }
+
+      .section-title {
+        text-align: center;
+        margin-bottom: 50px;
+      }
+
+      .section-title h2 {
+        font-size: 40px;
+        color: #156734;
+        margin-bottom: 15px;
+      }
+
+      .section-title p {
+        color: #666;
+        max-width: 700px;
+        margin: auto;
+        line-height: 1.8;
+      }
+
+      /* GRID */
+      .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 30px;
+      }
+
+      /* CARD */
+      .gallery-card {
+        background: white;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        transition: 0.3s;
+      }
+
+      .gallery-card:hover {
+        transform: translateY(-10px);
+      }
+
+      .gallery-card img {
+        width: 100%;
+        height: 240px;
+        object-fit: cover;
+        display: block;
+      }
+
+      .gallery-card-content {
+        padding: 25px;
+      }
+
+      .gallery-card-content h3 {
+        color: #156734;
+        margin-bottom: 12px;
+      }
+
+      .gallery-card-content p {
+        color: #666;
+        line-height: 1.7;
+      }
+
+      /* BUTTON */
+      .btn-kembali {
+        display: inline-block;
+        margin-top: 30px;
+        padding: 14px 30px;
+        background: #156734;
+        color: white;
+        text-decoration: none;
+        border-radius: 10px;
+        font-weight: 600;
+        transition: 0.3s;
+      }
+
+      .btn-kembali:hover {
+        background: #0f5228;
+      }
+
+      /* RESPONSIVE */
+      @media (max-width: 768px) {
+        .hero-content h1 {
+          font-size: 38px;
+        }
+
+        .section-title h2 {
+          font-size: 30px;
+        }
+
+        .gallery-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- HEADING 1 -->
+    <section class="hero-program">
+      <div class="hero-content">
+        <h1>Program Tambahan</h1>
+
+        <p>
+          Program tambahan dirancang untuk mengembangkan bakat, keterampilan,
+          kreativitas, serta jiwa kepemimpinan santri melalui berbagai kegiatan
+          yang edukatif dan inspiratif.
+        </p>
+
+        <a href="program.html" class="btn-kembali">
+          ← Kembali ke Program Unggulan
+        </a>
+      </div>
+    </section>
+
+    <!-- HEADING 2 -->
+    <section class="gallery-section">
+      <div class="section-title">
+        <h2>Galeri Kegiatan Santri</h2>
+
+        <p>
+          Berbagai kegiatan tambahan yang menjadi sarana pengembangan kemampuan
+          santri baik dalam bidang akademik, seni, olahraga maupun organisasi.
+        </p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-card">
+          <img src="images/publicspeaking.JPG" alt="Public Speaking" />
+
+          <div class="gallery-card-content">
+            <h3>Public Speaking</h3>
+
+            <p>
+              Melatih kemampuan berbicara di depan umum, membangun kepercayaan
+              diri, dan mengasah keterampilan komunikasi santri.
+            </p>
+          </div>
+        </div>
+
+        <div class="gallery-card">
+          <img src="images/hadroh.JPG" alt="Hadroh" />
+
+          <div class="gallery-card-content">
+            <h3>Hadroh</h3>
+
+            <p>
+              Mengembangkan bakat seni islami melalui musik rebana dan shalawat.
+            </p>
+          </div>
+        </div>
+
+        <div class="gallery-card">
+          <img src="images/olahraga.jpg" alt="Olahraga" />
+
+          <div class="gallery-card-content">
+            <h3>Olahraga</h3>
+
+            <p>
+              Menjaga kesehatan jasmani dan meningkatkan sportivitas santri.
+            </p>
+          </div>
+        </div>
+
+        <div class="gallery-card">
+          <img src="images/pelatihan.jpg" alt="Komputer" />
+
+          <div class="gallery-card-content">
+            <h3>Pelatihan Komputer</h3>
+
+            <p>
+              Membekali santri dengan kemampuan teknologi dan keterampilan
+              digital.
+            </p>
+          </div>
+        </div>
+
+        <div class="gallery-card">
+          <img src="images/pengembangan.JPG" alt="Bahasa" />
+
+          <div class="gallery-card-content">
+            <h3>Pengembangan Bahasa</h3>
+
+            <p>
+              Melatih kemampuan bahasa Arab dan Inggris untuk komunikasi global.
+            </p>
+          </div>
+        </div>
+
+        <div class="gallery-card">
+          <img src="images/seni.jpg" alt="Seni Islami" />
+
+          <div class="gallery-card-content">
+            <h3>Seni Islami</h3>
+
+            <p>
+              Menyalurkan kreativitas santri melalui berbagai kegiatan seni
+              bernuansa islami.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

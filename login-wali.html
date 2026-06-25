@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="id">
+  <link rel="stylesheet" href="style.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Wali Santri</title>
+
+    <link rel="stylesheet" href="login-santri.css" />
+  </head>
+  <body>
+    <div class="santri-login-container">
+      <div class="santri-login-card">
+        <div class="santri-login-left">
+          <img src="images/v269_54.png" alt="Logo Darussalam" />
+          <a href="index.html" class="santri-kembali"> ← Kembali ke Beranda </a>
+          <h1>Login Wali Santri</h1>
+
+          <p>
+            Portal Informasi Wali Santri Pondok Pesantren Darussalam Purwokerto
+          </p>
+        </div>
+
+        <div class="santri-login-right">
+          <form id="loginWali">
+            <h2>Masuk Akun</h2>
+
+            <input
+              type="text"
+              id="waliUsername"
+              placeholder="Nomor Induk Santri"
+              required
+            />
+
+            <input
+              type="password"
+              id="waliPassword"
+              placeholder="Password"
+              required
+            />
+
+            <button type="submit">Login</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dashboard Wali -->
+
+    <div class="santri-dashboard" id="waliDashboard">
+      <header class="santri-header">
+        <h2>Dashboard Wali Santri</h2>
+
+        <button onclick="logoutWali()">Logout</button>
+      </header>
+
+      <div class="santri-menu-container">
+        <div class="santri-menu-card">
+          👤
+          <h3>Profil Santri</h3>
+        </div>
+
+        <div class="santri-menu-card">
+          📊
+          <h3>Nilai Akademik</h3>
+        </div>
+
+        <div class="santri-menu-card">
+          🕌
+          <h3>Perkembangan Ibadah</h3>
+        </div>
+
+        <div class="santri-menu-card">
+          📚
+          <h3>Hafalan Al-Qur'an</h3>
+        </div>
+
+        <div class="santri-menu-card">
+          💰
+          <h3>Tagihan Syahriyah</h3>
+        </div>
+
+        <div class="santri-menu-card">
+          📢
+          <h3>Pengumuman Pondok</h3>
+        </div>
+
+        <div class="santri-menu-card">
+          📝
+          <h3>Perizinan Santri</h3>
+        </div>
+
+        <div class="santri-menu-card">
+          📞
+          <h3>Kontak Pengurus</h3>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document
+        .getElementById("loginWali")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          let user = document.getElementById("waliUsername").value;
+          let pass = document.getElementById("waliPassword").value;
+
+          if (user !== "" && pass !== "") {
+            document.querySelector(".santri-login-container").style.display =
+              "none";
+
+            document.getElementById("waliDashboard").style.display = "block";
+          }
+        });
+
+      function logoutWali() {
+        document.getElementById("waliDashboard").style.display = "none";
+
+        document.querySelector(".santri-login-container").style.display =
+          "flex";
+      }
+    </script>
+  </body>
+</html>
