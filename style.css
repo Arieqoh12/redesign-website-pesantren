@@ -1262,7 +1262,7 @@ header .menu li a:hover {
   position: relative;
   width: 100%;
   height: 650px;
-  background: url("images/dsa.jpeg") center center/cover no-repeat;
+  background: url("dsa.jpeg") center center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
